@@ -60,5 +60,5 @@ async def main():
     tarea_reloj = asyncio.create_task(reloj_tareas_programadas(bot))
     await asyncio.gather(tarea_senales, tarea_reloj)
 
-if name == "main":
+if __name__ == "__main__":
     asyncio.run(main())
